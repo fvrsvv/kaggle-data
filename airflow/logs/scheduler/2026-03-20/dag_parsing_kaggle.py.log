@@ -775,3 +775,113 @@ ModuleNotFoundError: No module named 'kagglehub'
 [2026-03-20T13:40:47.585+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:40:47.585+0000] {dag.py:3262} INFO - Creating ORM DAG for dag_parsing_kaggle
 [2026-03-20T13:40:47.585+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:40:47.585+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_parsing_kaggle to None, run_after=None
 [2026-03-20T13:40:47.592+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 5.664 seconds
+[2026-03-20T13:41:17.727+0000] {processor.py:186} INFO - Started process (PID=72) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:41:17.728+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:41:17.731+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:41:17.730+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:41:18.985+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:41:18.986+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:41:18.989+0000] {processor.py:925} INFO - DAG(s) 'dag_parsing_kaggle' retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:41:19.010+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:41:19.009+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-20T13:41:19.020+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:41:19.020+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_parsing_kaggle to None, run_after=None
+[2026-03-20T13:41:19.035+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 1.314 seconds
+[2026-03-20T13:41:49.186+0000] {processor.py:186} INFO - Started process (PID=97) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:41:49.187+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:41:49.189+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:41:49.189+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:41:50.668+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:41:50.668+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:41:50.672+0000] {processor.py:925} INFO - DAG(s) 'dag_parsing_kaggle' retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:41:50.687+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:41:50.686+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-20T13:41:50.694+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:41:50.694+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_parsing_kaggle to None, run_after=None
+[2026-03-20T13:41:50.713+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 1.532 seconds
+[2026-03-20T13:42:20.864+0000] {processor.py:186} INFO - Started process (PID=122) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:42:20.868+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:42:20.869+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:42:20.869+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:42:22.205+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:42:22.205+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:42:22.210+0000] {processor.py:925} INFO - DAG(s) 'dag_parsing_kaggle' retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:42:22.233+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:42:22.232+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-20T13:42:22.242+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:42:22.242+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_parsing_kaggle to None, run_after=None
+[2026-03-20T13:42:22.256+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 1.397 seconds
+[2026-03-20T13:42:52.390+0000] {processor.py:186} INFO - Started process (PID=147) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:42:52.393+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:42:52.397+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:42:52.396+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:42:53.825+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:42:53.826+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:42:53.829+0000] {processor.py:925} INFO - DAG(s) 'dag_parsing_kaggle' retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:42:53.849+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:42:53.848+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-20T13:42:53.856+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:42:53.855+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_parsing_kaggle to None, run_after=None
+[2026-03-20T13:42:53.867+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 1.482 seconds
+[2026-03-20T13:43:23.998+0000] {processor.py:186} INFO - Started process (PID=172) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:43:23.999+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:43:24.001+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:43:24.001+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:43:25.355+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:43:25.355+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:43:25.359+0000] {processor.py:925} INFO - DAG(s) 'dag_parsing_kaggle' retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:43:25.386+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:43:25.386+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-20T13:43:25.400+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:43:25.400+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_parsing_kaggle to None, run_after=None
+[2026-03-20T13:43:25.415+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 1.422 seconds
