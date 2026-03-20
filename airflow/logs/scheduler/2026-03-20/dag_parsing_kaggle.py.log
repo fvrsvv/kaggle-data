@@ -885,3 +885,773 @@ ModuleNotFoundError: No module named 'kagglehub'
 [2026-03-20T13:43:25.386+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:43:25.386+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2026-03-20T13:43:25.400+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:43:25.400+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_parsing_kaggle to None, run_after=None
 [2026-03-20T13:43:25.415+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 1.422 seconds
+[2026-03-20T13:47:56.653+0000] {processor.py:186} INFO - Started process (PID=46) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:47:56.654+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:47:56.656+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:47:56.656+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:47:59.936+0000] {logging_mixin.py:190} INFO - Downloading to /home/airflow/.cache/kagglehub/datasets/nalisha/job-salary-prediction-dataset/versions/1/job_salary_prediction_dataset.csv...
+[2026-03-20T13:47:59.940+0000] {logging_mixin.py:190} WARNING -   0%|          | 0.00/16.3M [00:00<?, ?B/s]
+[2026-03-20T13:48:00.687+0000] {logging_mixin.py:190} WARNING -   6%|6         | 1.00M/16.3M [00:00<00:11, 1.40MB/s]
+[2026-03-20T13:48:00.864+0000] {logging_mixin.py:190} WARNING -  12%|#2        | 2.00M/16.3M [00:00<00:05, 2.55MB/s]
+[2026-03-20T13:48:00.985+0000] {logging_mixin.py:190} WARNING -  18%|#8        | 3.00M/16.3M [00:01<00:03, 3.76MB/s]
+[2026-03-20T13:48:01.089+0000] {logging_mixin.py:190} WARNING -  24%|##4       | 4.00M/16.3M [00:01<00:02, 5.00MB/s]
+[2026-03-20T13:48:01.214+0000] {logging_mixin.py:190} WARNING -  37%|###6      | 6.00M/16.3M [00:01<00:01, 7.96MB/s]
+[2026-03-20T13:48:01.320+0000] {logging_mixin.py:190} WARNING -  49%|####8     | 8.00M/16.3M [00:01<00:00, 10.7MB/s]
+[2026-03-20T13:48:01.448+0000] {logging_mixin.py:190} WARNING -  73%|#######3  | 12.0M/16.3M [00:01<00:00, 17.1MB/s]
+[2026-03-20T13:48:01.574+0000] {logging_mixin.py:190} WARNING -  98%|#########7| 16.0M/16.3M [00:01<00:00, 21.7MB/s]
+[2026-03-20T13:48:01.581+0000] {logging_mixin.py:190} WARNING - 100%|##########| 16.3M/16.3M [00:01<00:00, 10.4MB/s]
+[2026-03-20T13:48:01.799+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:48:01.800+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:48:01.808+0000] {processor.py:925} INFO - DAG(s) 'dag_parsing_kaggle' retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:48:02.101+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:48:02.100+0000] {override.py:1932} INFO - Created Permission View: can read on DAG:dag_parsing_kaggle
+[2026-03-20T13:48:02.109+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:48:02.109+0000] {override.py:1932} INFO - Created Permission View: can edit on DAG:dag_parsing_kaggle
+[2026-03-20T13:48:02.115+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:48:02.115+0000] {override.py:1932} INFO - Created Permission View: can delete on DAG:dag_parsing_kaggle
+[2026-03-20T13:48:02.122+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:48:02.121+0000] {override.py:1932} INFO - Created Permission View: menu access on DAG Run:dag_parsing_kaggle
+[2026-03-20T13:48:02.126+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:48:02.126+0000] {override.py:1932} INFO - Created Permission View: can read on DAG Run:dag_parsing_kaggle
+[2026-03-20T13:48:02.132+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:48:02.132+0000] {override.py:1932} INFO - Created Permission View: can create on DAG Run:dag_parsing_kaggle
+[2026-03-20T13:48:02.137+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:48:02.137+0000] {override.py:1932} INFO - Created Permission View: can delete on DAG Run:dag_parsing_kaggle
+[2026-03-20T13:48:02.138+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:48:02.137+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-20T13:48:02.146+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:48:02.146+0000] {dag.py:3262} INFO - Creating ORM DAG for dag_parsing_kaggle
+[2026-03-20T13:48:02.147+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:48:02.147+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_parsing_kaggle to None, run_after=None
+[2026-03-20T13:48:02.159+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 5.510 seconds
+[2026-03-20T13:48:32.303+0000] {processor.py:186} INFO - Started process (PID=78) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:48:32.306+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:48:32.307+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:48:32.307+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:48:33.743+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:48:33.743+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:48:33.747+0000] {processor.py:925} INFO - DAG(s) 'dag_parsing_kaggle' retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:48:33.764+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:48:33.764+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-20T13:48:33.774+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:48:33.773+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_parsing_kaggle to None, run_after=None
+[2026-03-20T13:48:33.787+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 1.489 seconds
+[2026-03-20T13:49:03.906+0000] {processor.py:186} INFO - Started process (PID=103) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:49:03.909+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:49:03.911+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:49:03.911+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:49:05.340+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:49:05.340+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:49:05.343+0000] {processor.py:925} INFO - DAG(s) 'dag_parsing_kaggle' retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:49:05.368+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:49:05.367+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-20T13:49:05.377+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:49:05.377+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_parsing_kaggle to None, run_after=None
+[2026-03-20T13:49:05.393+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 1.491 seconds
+[2026-03-20T13:49:14.456+0000] {processor.py:186} INFO - Started process (PID=122) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:49:14.457+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:49:14.459+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:49:14.458+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:49:15.763+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:49:15.763+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:49:15.764+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:49:15.764+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 18, in <module>
+    python_callable=u.download_kaggle_dataset(),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: download_kaggle_dataset() missing 1 required positional argument: 'path'
+[2026-03-20T13:49:15.765+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:49:15.782+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 1.329 seconds
+[2026-03-20T13:49:31.526+0000] {processor.py:186} INFO - Started process (PID=147) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:49:31.530+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:49:31.532+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:49:31.532+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:49:33.010+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:49:33.010+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:49:33.012+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:49:33.011+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 18, in <module>
+    python_callable=u.download_kaggle_dataset(),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: download_kaggle_dataset() missing 1 required positional argument: 'path'
+[2026-03-20T13:49:33.012+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:49:33.033+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 1.511 seconds
+[2026-03-20T13:49:49.957+0000] {processor.py:186} INFO - Started process (PID=166) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:49:49.958+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:49:49.959+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:49:49.959+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:49:51.327+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:49:51.327+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:49:52.153+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:49:52.149+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 16, in <module>
+    download_kaggle_dataset = PythonOperator(
+                              ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 509, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-20T13:49:52.158+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:49:52.175+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 2.223 seconds
+[2026-03-20T13:50:11.226+0000] {processor.py:186} INFO - Started process (PID=192) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:50:11.229+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:50:11.231+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:50:11.231+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:50:12.561+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:50:12.561+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:50:13.311+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:50:13.310+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 16, in <module>
+    download_kaggle_dataset = PythonOperator(
+                              ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 509, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-20T13:50:13.318+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:50:13.334+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 2.114 seconds
+[2026-03-20T13:50:43.390+0000] {processor.py:186} INFO - Started process (PID=217) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:50:43.393+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:50:43.395+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:50:43.394+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:50:44.724+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:50:44.725+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:50:45.576+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:50:45.572+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 16, in <module>
+    download_kaggle_dataset = PythonOperator(
+                              ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 509, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-20T13:50:45.583+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:50:45.597+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 2.212 seconds
+[2026-03-20T13:51:11.570+0000] {processor.py:186} INFO - Started process (PID=242) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:51:11.573+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:51:11.574+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:51:11.574+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:51:12.945+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:51:12.945+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:51:12.947+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:51:12.947+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 18, in <module>
+    python_callable=u.download_kaggle(path),
+                    ^^^^^^^^^^^^^^^^^
+AttributeError: module 'utils' has no attribute 'download_kaggle'
+[2026-03-20T13:51:12.948+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:51:12.965+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 1.400 seconds
+[2026-03-20T13:51:43.104+0000] {processor.py:186} INFO - Started process (PID=267) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:51:43.107+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:51:43.108+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:51:43.108+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:51:44.288+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:51:44.287+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 16, in <module>
+    download_kaggle_dataset = PythonOperator(
+                              ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 509, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-20T13:51:44.290+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:51:44.307+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 1.208 seconds
+[2026-03-20T13:52:14.433+0000] {processor.py:186} INFO - Started process (PID=292) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:52:14.436+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:52:14.438+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:52:14.437+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:52:14.746+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:52:14.745+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 6, in <module>
+    import utils as u
+  File "/opt/airflow/dags/utils.py", line 15, in <module>
+    df = download_kaggle_dataset(path)
+         ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'download_kaggle_dataset' is not defined
+[2026-03-20T13:52:14.746+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:52:14.767+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 0.340 seconds
+[2026-03-20T13:52:44.890+0000] {processor.py:186} INFO - Started process (PID=317) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:52:44.893+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:52:44.893+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:52:44.893+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:52:46.192+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:52:46.192+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:52:46.993+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:52:46.992+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 16, in <module>
+    download_kaggle_dataset = PythonOperator(
+                              ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 509, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-20T13:52:46.999+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:52:47.011+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 2.126 seconds
+[2026-03-20T13:53:17.137+0000] {processor.py:186} INFO - Started process (PID=342) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:53:17.140+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:53:17.140+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:53:17.140+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:53:18.484+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:53:18.484+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:53:19.176+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:53:19.175+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 16, in <module>
+    download_kaggle_dataset = PythonOperator(
+                              ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 509, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-20T13:53:19.179+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:53:19.197+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 2.066 seconds
+[2026-03-20T13:53:33.207+0000] {processor.py:186} INFO - Started process (PID=367) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:53:33.208+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:53:33.209+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:53:33.209+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:53:33.211+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:53:33.210+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 21
+    python_callable=kagglehub.load_dataset(KaggleDatasetAdapter.PANDAS, "nalisha/job-salary-prediction-dataset", path)
+                    
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2026-03-20T13:53:33.211+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:53:33.229+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 0.028 seconds
+[2026-03-20T13:53:47.273+0000] {processor.py:186} INFO - Started process (PID=368) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:53:47.274+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:53:47.275+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:53:47.275+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:53:47.277+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:53:47.276+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 23
+    python_callable=kagglehub.load_dataset(KaggleDatasetAdapter.PANDAS, "nalisha/job-salary-prediction-dataset", path)
+                    
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2026-03-20T13:53:47.277+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:53:47.294+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 0.027 seconds
+[2026-03-20T13:53:56.337+0000] {processor.py:186} INFO - Started process (PID=369) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:53:56.338+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:53:56.339+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:53:56.339+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:53:56.343+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:53:56.341+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 23
+    python_callable=kagglehub.load_dataset(KaggleDatasetAdapter.PANDAS, "nalisha/job-salary-prediction-dataset", path)
+                    
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2026-03-20T13:53:56.343+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:53:56.366+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 0.035 seconds
+[2026-03-20T13:54:09.409+0000] {processor.py:186} INFO - Started process (PID=376) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:54:09.410+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:54:09.410+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:54:09.410+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:54:09.412+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:54:09.412+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 21
+    python_callable=kagglehub.load_dataset(KaggleDatasetAdapter.PANDAS, "nalisha/job-salary-prediction-dataset", path)
+                    
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2026-03-20T13:54:09.413+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:54:09.431+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 0.027 seconds
+[2026-03-20T13:54:38.550+0000] {processor.py:186} INFO - Started process (PID=382) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:54:38.551+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:54:38.552+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:54:38.552+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:54:39.883+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:54:39.883+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:54:39.885+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:54:39.885+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 18, in <module>
+    python_callable=kagglehub.load_dataset(KaggleDatasetAdapter.PANDAS, "nalisha/job-salary-prediction-dataset", path),
+                    ^^^^^^^^^
+NameError: name 'kagglehub' is not defined
+[2026-03-20T13:54:39.885+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:54:39.900+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 1.354 seconds
+[2026-03-20T13:54:54.626+0000] {processor.py:186} INFO - Started process (PID=401) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:54:54.626+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:54:54.627+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:54:54.627+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:54:55.966+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:54:55.967+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:54:56.764+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:54:56.763+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 22, in <module>
+    task_id="download_kaggle_dataset",
+                          ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 509, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-20T13:54:56.772+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:54:56.792+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 2.171 seconds
+[2026-03-20T13:55:26.936+0000] {processor.py:186} INFO - Started process (PID=426) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:55:26.939+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:55:26.940+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:55:26.940+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:55:28.254+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:55:28.254+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:55:29.101+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:55:29.099+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 21, in <module>
+    download_kaggle_dataset = PythonOperator(
+                              ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 509, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-20T13:55:29.112+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:55:29.132+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 2.201 seconds
+[2026-03-20T13:55:45.009+0000] {processor.py:186} INFO - Started process (PID=451) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:55:45.012+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:55:45.014+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:55:45.014+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:55:46.362+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:55:46.362+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:55:47.175+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:55:47.174+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 16, in <module>
+    download_kaggle_dataset = PythonOperator(
+                              ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 509, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-20T13:55:47.181+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:55:47.198+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 2.195 seconds
+[2026-03-20T13:56:17.348+0000] {processor.py:186} INFO - Started process (PID=476) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:56:17.350+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:56:17.351+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:56:17.351+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:56:18.674+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:56:18.675+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:56:19.477+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:56:19.476+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 16, in <module>
+    download_kaggle_dataset = PythonOperator(
+                              ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 509, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-20T13:56:19.482+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:56:19.503+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 2.159 seconds
+[2026-03-20T13:56:49.630+0000] {processor.py:186} INFO - Started process (PID=501) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:56:49.633+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:56:49.634+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:56:49.633+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:56:50.903+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:56:50.903+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:56:51.621+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:56:51.620+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 16, in <module>
+    download_kaggle_dataset = PythonOperator(
+                              ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 509, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-20T13:56:51.628+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:56:51.646+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 2.020 seconds
+[2026-03-20T13:57:21.758+0000] {processor.py:186} INFO - Started process (PID=525) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:57:21.761+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:57:21.763+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:57:21.762+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:57:23.111+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:57:23.112+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:57:23.939+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:57:23.938+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 16, in <module>
+    download_kaggle_dataset = PythonOperator(
+                              ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 509, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-20T13:57:23.946+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:57:23.967+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 2.214 seconds
+[2026-03-20T13:57:43.849+0000] {processor.py:186} INFO - Started process (PID=550) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:57:43.849+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:57:43.850+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:57:43.849+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:57:45.201+0000] {logging_mixin.py:190} INFO -                  job_title  experience_years  ... certifications  salary
+0              AI Engineer                10  ...              2  109413
+1             Data Analyst                 5  ...              0   93764
+2       Frontend Developer                18  ...              1  148123
+3         Business Analyst                19  ...              0  189123
+4          Product Manager                15  ...              0  165069
+...                    ...               ...  ...            ...     ...
+249990        Data Analyst                 4  ...              0   87314
+249991   Backend Developer                 0  ...              3  149227
+249992        Data Analyst                 7  ...              0   94870
+249993  Frontend Developer                17  ...              1  193028
+249994    Business Analyst                13  ...              3  171896
+
+[249995 rows x 10 columns]
+[2026-03-20T13:57:45.201+0000] {logging_mixin.py:190} INFO - (250000, 10)
+[2026-03-20T13:57:45.206+0000] {processor.py:925} INFO - DAG(s) 'dag_parsing_kaggle' retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:57:45.438+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:57:45.437+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-20T13:57:45.443+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:57:45.443+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_parsing_kaggle to None, run_after=None
+[2026-03-20T13:57:45.461+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 1.616 seconds
+[2026-03-20T13:58:15.607+0000] {processor.py:186} INFO - Started process (PID=575) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:58:15.610+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:58:15.611+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:58:15.611+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:58:15.940+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:58:15.939+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_parsing_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_parsing_kaggle.py", line 6, in <module>
+    import utils as u
+  File "/opt/airflow/dags/utils.py", line 15, in <module>
+    df = download_kaggle(path)
+                         ^^^^
+NameError: name 'path' is not defined
+[2026-03-20T13:58:15.941+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:58:15.961+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 0.360 seconds
+[2026-03-20T13:58:29.028+0000] {processor.py:186} INFO - Started process (PID=594) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:58:29.031+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:58:29.031+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:58:29.031+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:58:29.326+0000] {processor.py:925} INFO - DAG(s) 'dag_parsing_kaggle' retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:58:29.349+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:58:29.349+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-20T13:58:29.362+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:58:29.362+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_parsing_kaggle to None, run_after=None
+[2026-03-20T13:58:29.377+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 0.353 seconds
+[2026-03-20T13:59:14.716+0000] {processor.py:186} INFO - Started process (PID=40) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:59:14.717+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:59:14.719+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:59:14.718+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:59:16.021+0000] {processor.py:925} INFO - DAG(s) 'dag_parsing_kaggle' retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:59:16.341+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:59:16.340+0000] {override.py:1932} INFO - Created Permission View: can read on DAG:dag_parsing_kaggle
+[2026-03-20T13:59:16.349+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:59:16.349+0000] {override.py:1932} INFO - Created Permission View: can delete on DAG:dag_parsing_kaggle
+[2026-03-20T13:59:16.353+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:59:16.353+0000] {override.py:1932} INFO - Created Permission View: can edit on DAG:dag_parsing_kaggle
+[2026-03-20T13:59:16.358+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:59:16.358+0000] {override.py:1932} INFO - Created Permission View: can read on DAG Run:dag_parsing_kaggle
+[2026-03-20T13:59:16.368+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:59:16.367+0000] {override.py:1932} INFO - Created Permission View: menu access on DAG Run:dag_parsing_kaggle
+[2026-03-20T13:59:16.372+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:59:16.372+0000] {override.py:1932} INFO - Created Permission View: can create on DAG Run:dag_parsing_kaggle
+[2026-03-20T13:59:16.378+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:59:16.377+0000] {override.py:1932} INFO - Created Permission View: can delete on DAG Run:dag_parsing_kaggle
+[2026-03-20T13:59:16.378+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:59:16.378+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-20T13:59:16.384+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:59:16.384+0000] {dag.py:3262} INFO - Creating ORM DAG for dag_parsing_kaggle
+[2026-03-20T13:59:16.384+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:59:16.384+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_parsing_kaggle to None, run_after=None
+[2026-03-20T13:59:16.394+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 1.682 seconds
+[2026-03-20T13:59:46.540+0000] {processor.py:186} INFO - Started process (PID=71) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:59:46.541+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T13:59:46.544+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:59:46.544+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:59:46.865+0000] {processor.py:925} INFO - DAG(s) 'dag_parsing_kaggle' retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T13:59:46.891+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:59:46.890+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-20T13:59:46.901+0000] {logging_mixin.py:190} INFO - [2026-03-20T13:59:46.901+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_parsing_kaggle to None, run_after=None
+[2026-03-20T13:59:46.914+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 0.380 seconds
+[2026-03-20T14:00:16.960+0000] {processor.py:186} INFO - Started process (PID=96) to work on /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T14:00:16.961+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parsing_kaggle.py for tasks to queue
+[2026-03-20T14:00:16.965+0000] {logging_mixin.py:190} INFO - [2026-03-20T14:00:16.964+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T14:00:17.283+0000] {processor.py:925} INFO - DAG(s) 'dag_parsing_kaggle' retrieved from /opt/airflow/dags/dag_parsing_kaggle.py
+[2026-03-20T14:00:17.303+0000] {logging_mixin.py:190} INFO - [2026-03-20T14:00:17.302+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-20T14:00:17.317+0000] {logging_mixin.py:190} INFO - [2026-03-20T14:00:17.317+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_parsing_kaggle to None, run_after=None
+[2026-03-20T14:00:17.333+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parsing_kaggle.py took 0.377 seconds

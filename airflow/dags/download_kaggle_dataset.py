@@ -12,8 +12,8 @@ dag = DAG(
 )
 
 download_kaggle_dataset = PythonOperator(
-    task_id="add_capsules_values_to_table",
-    python_callable=u.download_kaggle_dataset,
+    task_id="download_kaggle_dataset",
+    python_callable=u.download_kaggle,
     dag=dag,
 )
 
