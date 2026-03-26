@@ -8,7 +8,7 @@
 
 ## О проекте
 
-Этот репозиторий содержит полный **ETL/ELT пайплайн** для датасета **Job Salary Prediction**:
+Этот репозиторий содержит полный **ETL/ELT пайплайн** для датасета **Job Salary Prediction** (https://www.kaggle.com/datasets/nalisha/job-salary-prediction-dataset):
 - Ингест данных из Kaggle → Bronze
 - Очистка, валидация и трансформация → Silver
 - Построение аналитических витрин (агрегации) → Gold
