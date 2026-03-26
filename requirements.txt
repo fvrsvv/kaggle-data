@@ -1,7 +1,11 @@
+apache-airflow==2.11.2
 dbt-core==1.7.0
 dbt-clickhouse==1.7.6
 python-decouple==3.8
 requests==2.31.0
 kagglehub==1.0.0
-apache-airflow==2.11.2
-pandas    
+pandas>=2.2.0
+
+minio>=7.2.0
+pyspark>=3.5.0
+delta-spark>=3.0.0
