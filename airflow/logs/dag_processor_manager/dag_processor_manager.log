@@ -5370,3 +5370,1570 @@ File Path                                        PID  Runtime      # DAGs    # E
 /opt/airflow/dags/kaggle_to_myminio_direct.py    251  0.00s             1           0  0.22s           2026-03-23T13:36:00                      10
 ================================================================================
 [2026-03-23T13:36:35.910+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2026-03-26T09:09:30.563+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2026-03-26T09:09:30.563+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2026-03-26T09:09:30.563+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-03-26T09:09:30.563+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T09:09:30.564+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T09:09:30.616+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/kaggle_to_myminio_direct.py     42  0.01s             0           0                                                   0
+/opt/airflow/dags/raw_to_silver.py                41  0.02s             0           0                                                   0
+================================================================================
+[2026-03-26T09:10:01.314+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                75  0.01s             0           1  0.60s           2026-03-26T09:09:31                       3
+/opt/airflow/dags/kaggle_to_myminio_direct.py     76  0.00s             1           0  0.59s           2026-03-26T09:09:31                      43
+================================================================================
+[2026-03-26T09:10:31.648+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.34s           2026-03-26T09:10:01                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    115  0.00s             1           0  0.21s           2026-03-26T09:10:01                      10
+================================================================================
+[2026-03-26T09:11:01.949+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.33s           2026-03-26T09:10:32                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    149  0.00s             1           0  0.20s           2026-03-26T09:10:31                      10
+================================================================================
+[2026-03-26T09:11:32.240+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.33s           2026-03-26T09:11:02                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    183  0.00s             1           0  0.18s           2026-03-26T09:11:02                      10
+================================================================================
+[2026-03-26T09:12:02.527+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.32s           2026-03-26T09:11:33                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    217  0.00s             1           0  0.17s           2026-03-26T09:11:32                      10
+================================================================================
+[2026-03-26T09:12:32.811+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.33s           2026-03-26T09:12:03                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    251  0.00s             1           0  0.18s           2026-03-26T09:12:02                      10
+================================================================================
+[2026-03-26T09:13:03.108+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.32s           2026-03-26T09:12:34                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    285  0.00s             1           0  0.19s           2026-03-26T09:12:32                      10
+================================================================================
+[2026-03-26T09:13:33.438+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.33s           2026-03-26T09:13:05                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    319  0.01s             1           0  0.20s           2026-03-26T09:13:03                      10
+================================================================================
+[2026-03-26T09:14:04.031+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.33s           2026-03-26T09:13:36                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    380  0.00s             1           0  0.19s           2026-03-26T09:13:33                      10
+================================================================================
+[2026-03-26T09:14:31.302+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T09:14:31.304+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T09:14:34.332+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.33s           2026-03-26T09:14:07                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    414  0.01s             1           0  0.18s           2026-03-26T09:14:04                      10
+================================================================================
+[2026-03-26T09:15:04.622+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.34s           2026-03-26T09:14:37                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    448  0.00s             1           0  0.18s           2026-03-26T09:14:34                      10
+================================================================================
+[2026-03-26T09:15:34.902+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.33s           2026-03-26T09:15:08                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    482  0.00s             1           0  0.17s           2026-03-26T09:15:04                      10
+================================================================================
+[2026-03-26T09:16:05.185+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.34s           2026-03-26T09:15:39                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    516  0.00s             1           0  0.18s           2026-03-26T09:15:35                      10
+================================================================================
+[2026-03-26T09:16:35.473+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.34s           2026-03-26T09:16:10                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    550  0.00s             1           0  0.18s           2026-03-26T09:16:05                      10
+================================================================================
+[2026-03-26T09:17:05.763+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.33s           2026-03-26T09:16:40                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    584  0.00s             1           0  0.18s           2026-03-26T09:16:35                      10
+================================================================================
+[2026-03-26T09:17:36.054+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.33s           2026-03-26T09:17:12                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    618  0.00s             1           0  0.18s           2026-03-26T09:17:05                      10
+================================================================================
+[2026-03-26T09:18:06.349+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.33s           2026-03-26T09:17:42                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    652  0.01s             1           0  0.18s           2026-03-26T09:17:36                      10
+================================================================================
+[2026-03-26T09:18:36.634+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.33s           2026-03-26T09:18:13                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    686  0.01s             1           0  0.18s           2026-03-26T09:18:06                      10
+================================================================================
+[2026-03-26T09:19:07.026+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.34s           2026-03-26T09:18:44                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    720  0.01s             1           0  0.28s           2026-03-26T09:18:36                      10
+================================================================================
+[2026-03-26T09:19:31.304+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T09:19:31.305+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T09:19:37.335+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.33s           2026-03-26T09:19:14                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    754  0.00s             1           0  0.19s           2026-03-26T09:19:07                      10
+================================================================================
+[2026-03-26T09:20:07.605+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.32s           2026-03-26T09:19:45                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    788  0.00s             1           0  0.18s           2026-03-26T09:19:37                      10
+================================================================================
+[2026-03-26T09:20:37.874+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.32s           2026-03-26T09:20:16                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    822  0.00s             1           0  0.18s           2026-03-26T09:20:07                      10
+================================================================================
+[2026-03-26T09:21:08.161+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.42s           2026-03-26T09:20:47                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    856  0.00s             1           0  0.18s           2026-03-26T09:20:38                      10
+================================================================================
+[2026-03-26T09:21:38.474+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.34s           2026-03-26T09:21:17                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    890  0.00s             1           0  0.19s           2026-03-26T09:21:08                      10
+================================================================================
+[2026-03-26T09:22:08.778+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.34s           2026-03-26T09:21:48                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    924  0.00s             1           0  0.20s           2026-03-26T09:21:38                      10
+================================================================================
+[2026-03-26T09:22:39.062+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.34s           2026-03-26T09:22:19                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    958  0.00s             1           0  0.19s           2026-03-26T09:22:08                      10
+================================================================================
+[2026-03-26T09:23:09.376+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.34s           2026-03-26T09:22:50                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    992  0.00s             1           0  0.20s           2026-03-26T09:22:39                      10
+================================================================================
+[2026-03-26T09:23:39.960+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.35s           2026-03-26T09:23:26                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1053  0.00s             1           0  0.18s           2026-03-26T09:23:09                      10
+================================================================================
+[2026-03-26T09:23:40.895+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2026-03-26T09:24:34.121+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2026-03-26T09:24:34.121+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2026-03-26T09:24:34.121+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-03-26T09:24:34.121+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T09:24:34.122+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T09:24:34.173+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/kaggle_to_myminio_direct.py     40  0.02s             0           0                                                   0
+/opt/airflow/dags/raw_to_silver.py                39  0.02s             0           0                                                   0
+================================================================================
+[2026-03-26T09:25:04.804+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/kaggle_to_myminio_direct.py     74  0.00s             1           0  0.54s           2026-03-26T09:24:34                      43
+/opt/airflow/dags/raw_to_silver.py                73  0.01s             0           1  0.53s           2026-03-26T09:24:34                       3
+================================================================================
+[2026-03-26T09:25:35.143+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py               113  0.01s             0           1  0.32s           2026-03-26T09:25:05                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    114  0.00s             1           0  0.24s           2026-03-26T09:25:05                      10
+================================================================================
+[2026-03-26T09:26:05.466+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.35s           2026-03-26T09:25:35                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    147  0.00s             1           0  0.21s           2026-03-26T09:25:35                      10
+================================================================================
+[2026-03-26T09:26:35.764+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.37s           2026-03-26T09:26:05                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    181  0.00s             1           0  0.20s           2026-03-26T09:26:05                      10
+================================================================================
+[2026-03-26T09:27:06.043+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.33s           2026-03-26T09:26:37                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    215  0.00s             1           0  0.18s           2026-03-26T09:26:35                      10
+================================================================================
+[2026-03-26T09:27:36.317+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.33s           2026-03-26T09:27:07                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    249  0.00s             1           0  0.18s           2026-03-26T09:27:06                      10
+================================================================================
+[2026-03-26T09:28:06.626+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.33s           2026-03-26T09:27:38                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    283  0.00s             1           0  0.19s           2026-03-26T09:27:36                      10
+================================================================================
+[2026-03-26T09:28:36.930+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.32s           2026-03-26T09:28:09                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    317  0.00s             1           0  0.19s           2026-03-26T09:28:06                      10
+================================================================================
+[2026-03-26T09:29:07.237+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.33s           2026-03-26T09:28:39                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    351  0.00s             1           0  0.18s           2026-03-26T09:28:37                      10
+================================================================================
+[2026-03-26T09:29:34.497+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T09:29:34.498+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T09:29:37.518+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.32s           2026-03-26T09:29:10                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    385  0.00s             1           0  0.17s           2026-03-26T09:29:07                      10
+================================================================================
+[2026-03-26T09:30:07.813+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.34s           2026-03-26T09:29:40                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    420  0.00s             1           0  0.19s           2026-03-26T09:29:37                      10
+================================================================================
+[2026-03-26T09:30:38.098+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.35s           2026-03-26T09:30:11                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    454  0.00s             1           0  0.18s           2026-03-26T09:30:07                      10
+================================================================================
+[2026-03-26T09:31:08.385+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.36s           2026-03-26T09:30:42                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    489  0.00s             1           0  0.18s           2026-03-26T09:30:38                      10
+================================================================================
+[2026-03-26T09:31:38.675+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.36s           2026-03-26T09:31:12                       5
+/opt/airflow/dags/kaggle_to_myminio_direct.py    523  0.00s             1           0  0.19s           2026-03-26T09:31:08                      10
+================================================================================
+[2026-03-26T09:32:09.114+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.37s           2026-03-26T09:32:05                      43
+/opt/airflow/dags/kaggle_to_myminio_direct.py    575  0.00s             1           0  0.17s           2026-03-26T09:31:38                      10
+================================================================================
+[2026-03-26T09:32:39.396+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T09:32:35                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    600  0.00s             1           0  0.19s           2026-03-26T09:32:09                      10
+================================================================================
+[2026-03-26T09:33:09.670+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T09:33:05                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    625  0.00s             1           0  0.18s           2026-03-26T09:32:39                      10
+================================================================================
+[2026-03-26T09:33:39.962+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T09:33:36                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    650  0.00s             1           0  0.20s           2026-03-26T09:33:09                      10
+================================================================================
+[2026-03-26T09:34:10.238+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T09:34:06                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    674  0.01s             1           0  0.18s           2026-03-26T09:33:40                      10
+================================================================================
+[2026-03-26T09:34:35.331+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T09:34:35.332+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T09:34:40.524+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T09:34:38                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    717  0.00s             1           0  0.18s           2026-03-26T09:34:10                      10
+================================================================================
+[2026-03-26T09:35:10.807+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.23s           2026-03-26T09:34:54                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    742  0.00s             1           0  0.18s           2026-03-26T09:34:40                      10
+================================================================================
+[2026-03-26T09:35:41.094+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T09:35:25                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    767  0.01s             1           0  0.18s           2026-03-26T09:35:10                      10
+================================================================================
+[2026-03-26T09:36:11.380+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T09:35:55                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    792  0.00s             1           0  0.19s           2026-03-26T09:35:41                      10
+================================================================================
+[2026-03-26T09:36:41.655+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.28s           2026-03-26T09:36:25                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    817  0.00s             1           0  0.17s           2026-03-26T09:36:11                      10
+================================================================================
+[2026-03-26T09:37:11.943+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T09:36:56                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    842  0.00s             1           0  0.18s           2026-03-26T09:36:41                      10
+================================================================================
+[2026-03-26T09:37:42.239+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T09:37:26                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    867  0.00s             1           0  0.18s           2026-03-26T09:37:12                      10
+================================================================================
+[2026-03-26T09:38:12.503+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.27s           2026-03-26T09:37:56                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    892  0.00s             1           0  0.17s           2026-03-26T09:37:42                      10
+================================================================================
+[2026-03-26T09:38:42.787+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T09:38:26                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    917  0.00s             1           0  0.18s           2026-03-26T09:38:12                      10
+================================================================================
+[2026-03-26T09:39:13.078+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T09:38:57                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    942  0.00s             1           0  0.18s           2026-03-26T09:38:42                      10
+================================================================================
+[2026-03-26T09:39:35.439+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T09:39:35.440+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T09:39:43.473+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/kaggle_to_myminio_direct.py    967  0.00s             1           0  0.30s           2026-03-26T09:39:13                      10
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T09:39:27                      10
+================================================================================
+[2026-03-26T09:40:13.754+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T09:39:57                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    992  0.00s             1           0  0.18s           2026-03-26T09:39:43                      10
+================================================================================
+[2026-03-26T09:40:44.024+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T09:40:28                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1017  0.00s             1           0  0.18s           2026-03-26T09:40:13                      10
+================================================================================
+[2026-03-26T09:41:14.304+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T09:40:58                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1042  0.00s             1           0  0.18s           2026-03-26T09:40:44                      10
+================================================================================
+[2026-03-26T09:41:44.602+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.23s           2026-03-26T09:41:28                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1067  0.01s             1           0  0.19s           2026-03-26T09:41:14                      10
+================================================================================
+[2026-03-26T09:42:14.901+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T09:41:59                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1092  0.00s             1           0  0.21s           2026-03-26T09:41:44                      10
+================================================================================
+[2026-03-26T09:42:45.187+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T09:42:29                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1117  0.00s             1           0  0.17s           2026-03-26T09:42:15                      10
+================================================================================
+[2026-03-26T09:43:14.619+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2026-03-26T09:59:50.948+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2026-03-26T09:59:50.949+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2026-03-26T09:59:50.949+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-03-26T09:59:50.949+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T09:59:50.950+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T09:59:51.007+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/kaggle_to_myminio_direct.py     41  0.02s             0           0                                                   0
+/opt/airflow/dags/raw_to_silver.py                40  0.02s             0           0                                                   0
+================================================================================
+[2026-03-26T10:00:21.655+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                71  0.01s             1           0  0.53s           2026-03-26T09:59:51                      43
+/opt/airflow/dags/kaggle_to_myminio_direct.py     72  0.00s             1           0  0.52s           2026-03-26T09:59:51                      43
+================================================================================
+[2026-03-26T10:00:52.024+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                96  0.01s             1           0  0.30s           2026-03-26T10:00:21                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py     97  0.00s             1           0  0.25s           2026-03-26T10:00:21                      10
+================================================================================
+[2026-03-26T10:01:22.154+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.27s           2026-03-26T10:00:52                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py                           1           0  0.26s           2026-03-26T10:00:52                      10
+================================================================================
+[2026-03-26T10:01:52.488+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.29s           2026-03-26T10:01:22                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py                           1           0  0.28s           2026-03-26T10:01:22                      10
+================================================================================
+[2026-03-26T10:02:23.099+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py               171  0.01s             1           0  0.25s           2026-03-26T10:01:53                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    172  0.00s             1           0  0.21s           2026-03-26T10:01:52                      10
+================================================================================
+[2026-03-26T10:02:47.669+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2026-03-26T10:03:33.654+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2026-03-26T10:03:33.654+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2026-03-26T10:03:33.655+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-03-26T10:03:33.655+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T10:03:33.656+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T10:03:33.728+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/kaggle_to_myminio_direct.py     41  0.03s             0           0                                                   0
+/opt/airflow/dags/raw_to_silver.py                40  0.03s             0           0                                                   0
+================================================================================
+[2026-03-26T10:04:04.392+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                71  0.01s             1           0  0.63s           2026-03-26T10:03:34                      43
+/opt/airflow/dags/kaggle_to_myminio_direct.py     72  0.00s             1           0  0.56s           2026-03-26T10:03:34                      43
+================================================================================
+[2026-03-26T10:04:34.752+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                96  0.01s             1           0  0.26s           2026-03-26T10:04:04                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py     97  0.00s             1           0  0.23s           2026-03-26T10:04:04                      10
+================================================================================
+[2026-03-26T10:05:05.028+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.87s           2026-03-26T10:04:36                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py                           1           0  0.30s           2026-03-26T10:04:35                      10
+================================================================================
+[2026-03-26T10:05:35.515+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.23s           2026-03-26T10:05:07                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    165  0.01s             1           0  0.18s           2026-03-26T10:05:05                      10
+================================================================================
+[2026-03-26T10:06:05.815+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:05:37                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    190  0.00s             1           0  0.19s           2026-03-26T10:05:35                      10
+================================================================================
+[2026-03-26T10:06:36.113+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.23s           2026-03-26T10:06:08                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    215  0.00s             1           0  0.19s           2026-03-26T10:06:06                      10
+================================================================================
+[2026-03-26T10:07:06.398+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:06:38                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    240  0.00s             1           0  0.18s           2026-03-26T10:06:36                      10
+================================================================================
+[2026-03-26T10:07:36.692+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:07:08                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    265  0.00s             1           0  0.18s           2026-03-26T10:07:06                      10
+================================================================================
+[2026-03-26T10:08:06.969+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.23s           2026-03-26T10:07:39                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    290  0.00s             1           0  0.18s           2026-03-26T10:07:36                      10
+================================================================================
+[2026-03-26T10:08:34.247+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T10:08:34.248+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T10:08:37.267+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:08:09                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    315  0.00s             1           0  0.19s           2026-03-26T10:08:07                      10
+================================================================================
+[2026-03-26T10:09:07.560+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:08:39                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    340  0.01s             1           0  0.18s           2026-03-26T10:08:37                      10
+================================================================================
+[2026-03-26T10:09:37.856+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:09:09                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    365  0.00s             1           0  0.18s           2026-03-26T10:09:07                      10
+================================================================================
+[2026-03-26T10:10:08.149+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:09:40                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    390  0.01s             1           0  0.18s           2026-03-26T10:09:38                      10
+================================================================================
+[2026-03-26T10:10:38.429+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.23s           2026-03-26T10:10:10                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    415  0.00s             1           0  0.18s           2026-03-26T10:10:08                      10
+================================================================================
+[2026-03-26T10:11:08.717+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:10:40                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    440  0.00s             1           0  0.18s           2026-03-26T10:10:38                      10
+================================================================================
+[2026-03-26T10:11:39.007+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:11:11                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    465  0.00s             1           0  0.18s           2026-03-26T10:11:08                      10
+================================================================================
+[2026-03-26T10:12:09.298+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:11:41                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    491  0.01s             1           0  0.18s           2026-03-26T10:11:39                      10
+================================================================================
+[2026-03-26T10:12:39.612+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:12:11                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    516  0.01s             1           0  0.21s           2026-03-26T10:12:09                      10
+================================================================================
+[2026-03-26T10:13:09.922+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:12:42                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    541  0.00s             1           0  0.20s           2026-03-26T10:12:39                      10
+================================================================================
+[2026-03-26T10:13:34.454+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T10:13:34.455+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T10:13:40.216+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.27s           2026-03-26T10:13:12                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    566  0.00s             1           0  0.19s           2026-03-26T10:13:10                      10
+================================================================================
+[2026-03-26T10:14:10.505+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:13:42                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    591  0.00s             1           0  0.18s           2026-03-26T10:13:40                      10
+================================================================================
+[2026-03-26T10:14:40.790+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:14:12                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    616  0.00s             1           0  0.18s           2026-03-26T10:14:10                      10
+================================================================================
+[2026-03-26T10:15:11.120+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:14:43                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    641  0.00s             1           0  0.21s           2026-03-26T10:14:40                      10
+================================================================================
+[2026-03-26T10:15:41.422+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:15:13                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    666  0.00s             1           0  0.19s           2026-03-26T10:15:11                      10
+================================================================================
+[2026-03-26T10:16:11.741+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:15:43                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    690  0.01s             1           0  0.19s           2026-03-26T10:15:41                      10
+================================================================================
+[2026-03-26T10:16:42.040+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:16:14                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    715  0.00s             1           0  0.18s           2026-03-26T10:16:11                      10
+================================================================================
+[2026-03-26T10:17:12.351+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:16:44                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    740  0.01s             1           0  0.19s           2026-03-26T10:16:42                      10
+================================================================================
+[2026-03-26T10:17:42.658+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:17:14                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    765  0.01s             1           0  0.19s           2026-03-26T10:17:12                      10
+================================================================================
+[2026-03-26T10:18:12.971+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:17:45                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    790  0.00s             1           0  0.21s           2026-03-26T10:17:42                      10
+================================================================================
+[2026-03-26T10:18:34.478+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T10:18:34.480+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T10:18:43.270+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:18:15                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    815  0.01s             1           0  0.19s           2026-03-26T10:18:13                      10
+================================================================================
+[2026-03-26T10:19:13.562+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:18:45                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    840  0.00s             1           0  0.19s           2026-03-26T10:18:43                      10
+================================================================================
+[2026-03-26T10:19:43.925+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.27s           2026-03-26T10:19:16                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    865  0.00s             1           0  0.24s           2026-03-26T10:19:13                      10
+================================================================================
+[2026-03-26T10:20:14.225+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:19:46                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    890  0.00s             1           0  0.19s           2026-03-26T10:19:44                      10
+================================================================================
+[2026-03-26T10:20:44.530+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.23s           2026-03-26T10:20:16                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    915  0.00s             1           0  0.19s           2026-03-26T10:20:14                      10
+================================================================================
+[2026-03-26T10:21:14.831+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.27s           2026-03-26T10:20:46                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    940  0.00s             1           0  0.19s           2026-03-26T10:20:44                      10
+================================================================================
+[2026-03-26T10:21:45.129+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:21:17                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    965  0.00s             1           0  0.20s           2026-03-26T10:21:15                      10
+================================================================================
+[2026-03-26T10:22:15.427+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:21:47                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    990  0.00s             1           0  0.19s           2026-03-26T10:21:45                      10
+================================================================================
+[2026-03-26T10:22:45.715+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:22:17                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1015  0.00s             1           0  0.18s           2026-03-26T10:22:15                      10
+================================================================================
+[2026-03-26T10:23:16.023+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.28s           2026-03-26T10:22:48                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1040  0.00s             1           0  0.19s           2026-03-26T10:22:45                      10
+================================================================================
+[2026-03-26T10:23:35.280+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T10:23:35.281+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T10:23:46.373+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:23:41                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1085  0.00s             1           0  0.19s           2026-03-26T10:23:16                      10
+================================================================================
+[2026-03-26T10:24:16.662+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:24:11                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1110  0.00s             1           0  0.20s           2026-03-26T10:23:46                      10
+================================================================================
+[2026-03-26T10:24:46.958+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:24:42                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1135  0.00s             1           0  0.19s           2026-03-26T10:24:16                      10
+================================================================================
+[2026-03-26T10:25:17.262+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:25:12                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1159  0.01s             1           0  0.19s           2026-03-26T10:24:47                      10
+================================================================================
+[2026-03-26T10:25:47.537+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:25:42                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1183  0.00s             1           0  0.18s           2026-03-26T10:25:17                      10
+================================================================================
+[2026-03-26T10:26:17.814+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:26:13                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1208  0.00s             1           0  0.18s           2026-03-26T10:25:47                      10
+================================================================================
+[2026-03-26T10:26:48.102+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:26:43                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1233  0.00s             1           0  0.18s           2026-03-26T10:26:17                      10
+================================================================================
+[2026-03-26T10:27:18.375+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:27:13                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1258  0.00s             1           0  0.18s           2026-03-26T10:26:48                      10
+================================================================================
+[2026-03-26T10:27:48.674+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:27:43                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1282  0.01s             1           0  0.19s           2026-03-26T10:27:18                      10
+================================================================================
+[2026-03-26T10:28:10.494+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2026-03-26T10:28:54.245+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2026-03-26T10:28:54.245+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2026-03-26T10:28:54.245+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-03-26T10:28:54.245+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T10:28:54.246+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T10:28:54.300+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/kaggle_to_myminio_direct.py     46  0.01s             0           0                                                   0
+/opt/airflow/dags/raw_to_silver.py                45  0.02s             0           0                                                   0
+================================================================================
+[2026-03-26T10:29:25.046+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                70  0.01s             1           0  0.70s           2026-03-26T10:28:54                      43
+/opt/airflow/dags/kaggle_to_myminio_direct.py     71  0.00s             1           0  0.61s           2026-03-26T10:28:54                      43
+================================================================================
+[2026-03-26T10:29:55.411+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                95  0.01s             1           0  0.30s           2026-03-26T10:29:25                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py     96  0.01s             1           0  0.24s           2026-03-26T10:29:25                      10
+================================================================================
+[2026-03-26T10:30:25.795+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.27s           2026-03-26T10:30:25                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    139  0.01s             1           0  0.24s           2026-03-26T10:29:55                      10
+================================================================================
+[2026-03-26T10:30:56.161+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/kaggle_to_myminio_direct.py    164  0.00s             1           0  0.26s           2026-03-26T10:30:26                      10
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:30:55                      10
+================================================================================
+[2026-03-26T10:31:26.475+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.27s           2026-03-26T10:31:25                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    189  0.01s             1           0  0.20s           2026-03-26T10:30:56                      10
+================================================================================
+[2026-03-26T10:31:56.752+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:31:55                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    214  0.00s             1           0  0.18s           2026-03-26T10:31:26                      10
+================================================================================
+[2026-03-26T10:32:27.038+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:32:26                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    239  0.00s             1           0  0.18s           2026-03-26T10:31:56                      10
+================================================================================
+[2026-03-26T10:32:57.333+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:32:56                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    264  0.00s             1           0  0.20s           2026-03-26T10:32:27                      10
+================================================================================
+[2026-03-26T10:33:27.632+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.27s           2026-03-26T10:33:26                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    290  0.01s             1           0  0.20s           2026-03-26T10:32:57                      10
+================================================================================
+[2026-03-26T10:33:54.732+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T10:33:54.733+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T10:33:57.909+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:33:57                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    315  0.00s             1           0  0.18s           2026-03-26T10:33:27                      10
+================================================================================
+[2026-03-26T10:34:28.186+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:34:27                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    340  0.00s             1           0  0.18s           2026-03-26T10:33:58                      10
+================================================================================
+[2026-03-26T10:34:58.521+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:34:57                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    365  0.00s             1           0  0.23s           2026-03-26T10:34:28                      10
+================================================================================
+[2026-03-26T10:35:28.820+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:35:05                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    390  0.00s             1           0  0.19s           2026-03-26T10:34:58                      10
+================================================================================
+[2026-03-26T10:35:59.271+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:35:41                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    433  0.00s             1           0  0.19s           2026-03-26T10:35:29                      10
+================================================================================
+[2026-03-26T10:36:29.836+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.27s           2026-03-26T10:36:05                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    476  0.00s             1           0  0.19s           2026-03-26T10:35:59                      10
+================================================================================
+[2026-03-26T10:37:00.124+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.23s           2026-03-26T10:36:36                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    501  0.00s             1           0  0.19s           2026-03-26T10:36:30                      10
+================================================================================
+[2026-03-26T10:37:30.416+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:37:06                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    526  0.00s             1           0  0.19s           2026-03-26T10:37:00                      10
+================================================================================
+[2026-03-26T10:38:00.852+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.32s           2026-03-26T10:37:41                      31
+/opt/airflow/dags/kaggle_to_myminio_direct.py    569  0.01s             1           0  0.19s           2026-03-26T10:37:30                      10
+================================================================================
+[2026-03-26T10:38:31.177+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:38:12                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    594  0.01s             1           0  0.23s           2026-03-26T10:38:01                      10
+================================================================================
+[2026-03-26T10:38:55.434+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T10:38:55.435+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T10:39:01.465+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:38:42                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    619  0.00s             1           0  0.19s           2026-03-26T10:38:31                      10
+================================================================================
+[2026-03-26T10:39:31.981+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.28s           2026-03-26T10:39:30                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    662  0.00s             1           0  0.19s           2026-03-26T10:39:01                      10
+================================================================================
+[2026-03-26T10:40:02.292+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:39:55                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    687  0.00s             1           0  0.21s           2026-03-26T10:39:32                      10
+================================================================================
+[2026-03-26T10:40:32.599+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:40:25                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    712  0.00s             1           0  0.21s           2026-03-26T10:40:02                      10
+================================================================================
+[2026-03-26T10:41:02.881+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:40:56                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    737  0.00s             1           0  0.18s           2026-03-26T10:40:32                      10
+================================================================================
+[2026-03-26T10:41:33.176+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:41:29                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    780  0.00s             1           0  0.20s           2026-03-26T10:41:03                      10
+================================================================================
+[2026-03-26T10:42:03.467+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:41:59                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    805  0.00s             1           0  0.19s           2026-03-26T10:41:33                      10
+================================================================================
+[2026-03-26T10:42:33.759+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py               830  0.02s             1           0  0.25s           2026-03-26T10:42:29                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    831  0.01s             1           0  0.18s           2026-03-26T10:42:03                      10
+================================================================================
+[2026-03-26T10:43:04.120+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:42:55                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    873  0.00s             1           0  0.24s           2026-03-26T10:42:33                      10
+================================================================================
+[2026-03-26T10:43:34.411+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:43:25                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    898  0.00s             1           0  0.18s           2026-03-26T10:43:04                      10
+================================================================================
+[2026-03-26T10:43:55.495+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T10:43:55.496+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T10:44:04.741+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:43:55                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    923  0.01s             1           0  0.20s           2026-03-26T10:43:34                      10
+================================================================================
+[2026-03-26T10:44:35.043+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:44:26                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    948  0.00s             1           0  0.21s           2026-03-26T10:44:04                      10
+================================================================================
+[2026-03-26T10:45:05.348+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:44:56                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    973  0.00s             1           0  0.18s           2026-03-26T10:44:35                      10
+================================================================================
+[2026-03-26T10:45:35.673+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.28s           2026-03-26T10:45:18                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py    998  0.01s             1           0  0.18s           2026-03-26T10:45:05                      10
+================================================================================
+[2026-03-26T10:46:06.005+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:45:49                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1023  0.00s             1           0  0.23s           2026-03-26T10:45:35                      10
+================================================================================
+[2026-03-26T10:46:36.286+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.24s           2026-03-26T10:46:19                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1048  0.01s             1           0  0.18s           2026-03-26T10:46:06                      10
+================================================================================
+[2026-03-26T10:47:06.635+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:46:49                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py   1073  0.01s             1           0  0.23s           2026-03-26T10:46:36                      10
+================================================================================
+[2026-03-26T10:47:36.768+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/kaggle_to_myminio_direct.py                           1           0  0.19s           2026-03-26T10:47:06                      10
+/opt/airflow/dags/raw_to_silver.py                                      0           1  0.04s           2026-03-26T10:47:30                       5
+================================================================================
+[2026-03-26T10:48:06.935+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:47:54                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py                           1           0  0.20s           2026-03-26T10:47:37                      10
+================================================================================
+[2026-03-26T10:48:37.505+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:48:34                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py                           1           0  0.19s           2026-03-26T10:48:08                      10
+================================================================================
+[2026-03-26T10:48:55.574+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-26T10:48:55.574+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-26T10:49:07.805+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:49:05                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py                           1           0  0.20s           2026-03-26T10:48:38                      10
+================================================================================
+[2026-03-26T10:49:38.108+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.26s           2026-03-26T10:49:35                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py                           1           0  0.19s           2026-03-26T10:49:08                      10
+================================================================================
+[2026-03-26T10:50:08.419+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:49:46                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py                           1           0  0.19s           2026-03-26T10:49:39                      10
+================================================================================
+[2026-03-26T10:50:38.736+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.28s           2026-03-26T10:50:13                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py                           1           0  0.19s           2026-03-26T10:50:09                      10
+================================================================================
+[2026-03-26T10:51:09.069+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:50:44                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py                           1           0  0.21s           2026-03-26T10:50:39                      10
+================================================================================
+[2026-03-26T10:51:39.369+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.27s           2026-03-26T10:51:14                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py                           1           0  0.19s           2026-03-26T10:51:10                      10
+================================================================================
+[2026-03-26T10:52:09.671+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/raw_to_silver.py                                      1           0  0.25s           2026-03-26T10:51:44                      10
+/opt/airflow/dags/kaggle_to_myminio_direct.py                           1           0  0.19s           2026-03-26T10:51:40                      10
+================================================================================
