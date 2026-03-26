@@ -38,15 +38,15 @@ if __name__ == "__main__":
     download_kaggle()
 
 dag = DAG(
-    dag_id="kaggle_to_minio_direct",
+    dag_id="to_raw",
     schedule_interval=None,
     catchup=False,
 )
 
-upload_kaggle_to_minio = PythonOperator(
-    task_id="upload_kaggle_to_minio",
+kaggle_to_minio_task = PythonOperator(
+    task_id="to_raw",
     python_callable=download_kaggle,
     dag=dag,
 )
 
-(upload_kaggle_to_minio)
+(kaggle_to_minio_task)
