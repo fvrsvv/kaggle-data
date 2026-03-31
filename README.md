@@ -15,6 +15,28 @@
 
 Используется современный **Data Lakehouse** подход на базе Delta Lake.
 
+## Поток данных
+
+```
+Источники данных (Kaggle, API, базы и т.д.)
+          ↓
+     Airflow DAG (Ingestion)
+          ↓
+   MinIO → Bronze (сырые данные)
+          ↓
+   PySpark Job (очистка, дедупликация, обогащение)
+          ↓
+   MinIO → Silver (Apache Iceberg tables)
+          ↓
+   ClickHouse (читает Silver напрямую через IcebergS3)
+          ↓
+          dbt (на ClickHouse)
+   ├── Silver models → materialization: view / ephemeral
+   └── Gold / Data Marts → materialization: table / incremental (MergeTree)
+          ↓
+   BI-инструменты (Metabase / Superset / Lightdash и т.д.)
+```
+
 ### Основные витрины (Gold layer)
 
 - **salary_by_industry** — статистика зарплат по отраслям (средняя, медиана, мин/макс, стандартное отклонение)
