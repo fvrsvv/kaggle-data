@@ -25,7 +25,7 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/airflow/logs:/opt/airflow/logs
     - ${AIRFLOW_PROJ_DIR:-.}/airflow/config:/opt/airflow/config
     - ${AIRFLOW_PROJ_DIR:-.}/airflow/plugins:/opt/airflow/plugins
-    - ./dbt:/mnt/dbt
+    - ./dbt:/opt/airflow/dags/dbt
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
@@ -284,27 +284,27 @@ services:
       exit 0;
       "
   
-  nessie:
-    image: projectnessie/nessie:latest
-    container_name: nessie
-    ports:
-      - "19120:19120"
-    environment:
-      NESSIE_VERSION_STORE_TYPE: IN_MEMORY
-    depends_on:
-      - minio
+  # nessie:
+  #   image: projectnessie/nessie:latest
+  #   container_name: nessie
+  #   ports:
+  #     - "19120:19120"
+  #   environment:
+  #     NESSIE_VERSION_STORE_TYPE: IN_MEMORY
+  #   depends_on:
+  #     - minio
 
-  # Trino с поддержкой Iceberg + Delta Lake
-  trino:
-    image: trinodb/trino:latest
-    container_name: trino
-    ports:
-      - "8080:8080"
-    volumes:
-      - ./trino/catalog:/etc/trino/catalog
-    depends_on:
-      - minio
-      - nessie
+  # # Trino с поддержкой Iceberg + Delta Lake
+  # trino:
+  #   image: trinodb/trino:latest
+  #   container_name: trino
+  #   ports:
+  #     - "8080:8080"
+  #   volumes:
+  #     - ./trino/catalog:/etc/trino/catalog
+  #   depends_on:
+  #     - minio
+  #     - nessie
 
 volumes:
     data-minio:

@@ -30,7 +30,7 @@
           ↓
    ClickHouse (читает Silver напрямую через IcebergS3)
           ↓
-          dbt (на ClickHouse)
+          dbt (на ClickHouse) + Cosmos
    ├── Silver models → materialization: view / ephemeral
    └── Gold / Data Marts → materialization: table / incremental (MergeTree)
           ↓
