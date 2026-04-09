@@ -5,3 +5,8 @@ airflow/logs
 airflow/dags/__pycache__
 
 minio/
+
+*.tgz
+*.tar.gz
+spark-*-bin-*spark-3.5.8-bin-hadoop3.tgz
+*.tgz

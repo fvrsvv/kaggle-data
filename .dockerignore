@@ -1,0 +1,8 @@
+**/__pycache__
+**/.pytest_cache
+**/.git
+**/.github
+**/node_modules
+airflow/logs
+data
+*.log

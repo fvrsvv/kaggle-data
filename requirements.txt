@@ -1,12 +1,16 @@
-apache-airflow==2.11.2
 python-decouple==3.8
 requests==2.31.0
 kagglehub==1.0.0
-pandas>=2.2.0
 
+apache-airflow-providers-apache-spark==5.0.0   
+# pyspark==3.5.1
+pandas>=2.0.0
 minio>=7.2.0
-pyspark>=3.5.0
+pyarrow>=15.0.0
 
-dbt-core==1.9.0
-dbt-clickhouse==1.9.0
-dbt-adapters==1.10.4
+# dbt-core==1.9.0
+# dbt-clickhouse==1.9.0
+# dbt-adapters==1.10.4
+
+# Если позже захочешь PyIceberg:
+# pyiceberg[pyarrow,hadoop,s3fs]
