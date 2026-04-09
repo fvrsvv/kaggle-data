@@ -17,7 +17,8 @@ x-airflow-common:
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
     AIRFLOW__CORE__TEST_CONNECTION: 'Enabled'
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
-    AIRFLOW_CONN_SPARK_DEFAULT: spark://spark-master:7077 # Автоматическое создание Spark connection
+    # Автоматическое создание Spark connection
+    AIRFLOW_CONN_SPARK_DEFAULT: '{"conn_type": "spark", "host": "spark-master", "port": 7077, "extra": {"deploy-mode": "client"}}' 
     JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
     SPARK_HOME: /opt/spark
     # AIRFLOW_CONN_SERVER_PUBLICIST: 'postgresql://${POSTGRES_PUBLICIST_USER}:${POSTGRES_PUBLICIST_PASSWORD}@host.docker.internal:5431/${POSTGRES_PUBLICIST_DB}'
@@ -56,6 +57,8 @@ services:
       retries: 5
       start_period: 5s
     restart: always
+    networks:
+      - airflow-net
 
   redis:
     image: redis:latest
@@ -69,10 +72,12 @@ services:
       retries: 50
       start_period: 30s
     restart: always
+    networks:
+      - airflow-net
 
     # ==================== Spark Standalone Cluster ====================
   spark-master:
-    image: apache/spark:3.5.1
+    image: apache/spark:3.5.8
     container_name: spark-master
     hostname: spark-master
     ports:
@@ -91,7 +96,7 @@ services:
       start_period: 20s
 
   spark-worker:
-    image: apache/spark:3.5.1
+    image: apache/spark:3.5.8
     container_name: spark-worker
     hostname: spark-worker
     depends_on:
@@ -124,6 +129,8 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
+    networks:
+      - airflow-net
 
   airflow-scheduler:
     <<: *airflow-common
@@ -139,6 +146,8 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
+    networks:
+      - airflow-net
 
   airflow-worker:
     <<: *airflow-common
@@ -163,6 +172,8 @@ services:
         condition: service_started
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    networks:
+      - airflow-net
 
   airflow-triggerer:
     <<: *airflow-common
@@ -178,6 +189,8 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
+    networks:
+      - airflow-net
 
   airflow-init:
       <<: *airflow-common
@@ -192,6 +205,8 @@ services:
       user: "0:0"
       volumes:
         - ${AIRFLOW_PROJ_DIR:-.}/airflow:/sources
+      networks:
+        - airflow-net
 
   airflow-cli:
     <<: *airflow-common
