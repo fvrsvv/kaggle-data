@@ -17,7 +17,7 @@ with DAG(
     test_job = SparkSubmitOperator(
         task_id="test_spark_job",
         application="/opt/spark_jobs/test_job.py",
-        conn_id="spark_default",           # должно быть настроено как spark://spark-master:7077
+        conn_id="spark_default",       
         deploy_mode="client",
         verbose=True,
         conf={
@@ -25,8 +25,6 @@ with DAG(
             "spark.executor.cores": "1",
             "spark.driver.memory": "1g",
         },
-        # Альтернативный способ (если conn_id не работает)
-        # spark_master="spark://spark-master:7077",   # попробуй этот параметр
     )
 
     test_job
