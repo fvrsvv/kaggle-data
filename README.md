@@ -1,6 +1,6 @@
 # Kaggle Data — Job Salary Prediction Pipeline
 
-Проект по построению аналитического пайплайна обработки данных о вакансиях и зарплатах с использованием **Apache Spark**, **Delta Lake**, **Airflow** и **MinIO**.
+Проект по построению аналитического пайплайна обработки данных о вакансиях и зарплатах с использованием **Apache Spark**, **Data Build Tools**, **Airflow** и **MinIO**.
 
 Цель проекта — загрузить сырые данные с Kaggle, очистить и сохранить их в Silver-слое, а затем построить готовые аналитические витрины (Gold layer) для бизнес-аналитики.
 
@@ -18,41 +18,39 @@
 ## Поток данных
 
 ```
-Источники данных (Kaggle, API, базы и т.д.)
+Источники данных
           ↓
-     Airflow DAG (Ingestion)
+Airflow DAG (Ingestion)
           ↓
-   MinIO → Bronze (сырые данные)
+MinIO → Bronze (сырые данные)
           ↓
-   PySpark Job (очистка, дедупликация, обогащение)
+PySpark Job (очистка, дедупликация, обогащение)
           ↓
-   MinIO → Silver (Apache Iceberg tables)
+MinIO → Silver (Apache Iceberg tables)
           ↓
-   ClickHouse (читает Silver напрямую через IcebergS3)
+dbt читает данные напрямую из Silver Iceberg. 
+Trino выступает как query engine, который умеет читать Iceberg таблицы по SQL.
           ↓
-          dbt (на ClickHouse) + Cosmos
+dbt материализует модели в ClickHouse (Gold layer).
+          ↓
+dbt (на ClickHouse) + Cosmos
    ├── Silver models → materialization: view / ephemeral
    └── Gold / Data Marts → materialization: table / incremental (MergeTree)
           ↓
-   BI-инструменты (Metabase / Superset / Lightdash и т.д.)
+BI-инструменты (Metabase / Superset)
 ```
-
-### Основные витрины (Gold layer)
-
-- **salary_by_industry** — статистика зарплат по отраслям (средняя, медиана, мин/макс, стандартное отклонение)
-- **salary_by_experience_edu** — статистика зарплат по категориям опыта и уровню образования
-- **salary_summary** — сводная статистика по remote work и размеру компании
 
 ---
 
 ## Стек технологий
 
 - **Python 3.11**
-- **Apache Spark** + **Delta Lake**
-- **Apache Airflow** (оркестрация DAG'ов)
+- **Apache Spark** + **Iceberg**
+- **Apache Airflow**
+- **Trino** + **Polaris**
+- **Data Build Tools (dbt)**
 - **MinIO** (S3-совместимое хранилище)
-- **Docker** + **docker-compose**
-- PySpark, Delta-spark, Hadoop AWS
+- **Docker**
 
 ---
 
@@ -69,11 +67,6 @@ cd kaggle-data
 ```bash
 docker-compose up -d
 ```
-### Сервисы, которые запустятся:
-
-- Airflow (webserver + scheduler)
-- Spark (в режиме local[*])
-- MinIO (S3-совместимое хранилище)
 
 ### 3. Настройка
 Создайте .env в корне проект и укажите свои параметры (пример .env.example).
