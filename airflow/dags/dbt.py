@@ -1,32 +1,32 @@
-from airflow.operators.bash import BashOperator
 from airflow import DAG
+from airflow.operators.bash import BashOperator
+from airflow.utils.dates import days_ago
+from datetime import timedelta
 
-dag = DAG(
-    dag_id="dbt_job_salary_run",
-    schedule_interval=None,
-    schedule=None,
+default_args = {
+    'owner': 'airflow',
+    'retry_delay': timedelta(minutes=5),
+}
+
+with DAG(
+    dag_id="silver_to_gold_dbt",
+    start_date=days_ago(1),
+    schedule=None,      
     catchup=False,
-    tags=["dbt", "clickhouse"],
-)
+    default_args=default_args,
+    tags=["spark", "dbt", "gold"],
+) as dag:
 
-dbt_run = BashOperator(
-    task_id="dbt_run",
-    bash_command="""
-        cd /opt/airflow/dags/dbt/job_salary && 
-        dbt run --select silver+ gold+ --profiles-dir /opt/airflow/dags/dbt
-    """,
-    dag=dag,
-)
+    dbt_run = BashOperator(
+        task_id="dbt_run_gold",
+        bash_command="""
+                cd /opt/airflow/dags/dbt/job_salary && 
+                dbt deps && dbt run
+                """
+        # env={
+        #     "CLICKHOUSE_USER": "default",
+        #     "CLICKHOUSE_PASSWORD": "clickhouse_password",
+        # },
+    )
 
-dbt_test = BashOperator(
-    task_id="dbt_test",
-    bash_command="""
-        cd /opt/airflow/dags/dbt/job_salary && 
-        dbt deps && 
-        dbt run --select silver+ gold+ &&
-        dbt test --select silver+ gold+
-    """,
-    dag=dag,
-)
-
-(dbt_test >> dbt_run)
+    dbt_run

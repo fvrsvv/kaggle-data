@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: silver
+    database: iceberg
+    schema: silver
+    tables:
+      - name: job_salary_prediction
+        description: "Cleaned job salary data from Spark → Iceberg (Nessie)"
+        freshness:
+          warn_after: { count: 24, period: hour }

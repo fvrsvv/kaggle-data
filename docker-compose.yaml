@@ -264,6 +264,73 @@ services:
   #   #   # server_subscription:
   #     #   condition: service_healthy
 
+  trino:
+    build:
+      context: ./trino
+      dockerfile: Dockerfile
+    container_name: trino
+    ports:
+      - "8181:8080"          
+    volumes:
+      - ./trino/catalog:/etc/trino/catalog
+      - ./trino/jars:/usr/lib/trino/plugin/iceberg/hadoop
+    networks:
+      - airflow-net
+  
+  # polaris:
+  #   image: apache/polaris:latest
+  #   container_name: polaris
+  #   platform: linux/amd64   # важно для некоторых хостов
+  #   ports:
+  #     - "8282:8181"   # REST API
+  #   networks:
+  #     - airflow-net
+  #   environment:
+  #     - AWS_ACCESS_KEY_ID=minio
+  #     - AWS_SECRET_ACCESS_KEY=minio123
+  #     - AWS_REGION=us-east-1
+  #     - AWS_ENDPOINT_URL_S3=http://minio:9000
+  #     - POLARIS_BOOTSTRAP_CREDENTIALS=default-realm,root,s3cr3t
+  #   command: >
+  #     sh -c "
+  #       echo 'Bootstrapping Polaris...' &&
+  #       /opt/polaris/bin/polaris --bootstrap --credential default-realm,root,s3cr3t &&
+  #       /opt/polaris/bin/polaris
+  #     "
+  #   depends_on:
+  #     - minio
+  #   # restart: unless-stopped
+
+  # hive-metastore:
+  #   image: apache/hive:4.0.0
+  #   container_name: hive-metastore
+  #   hostname: hive-metastore
+  #   ports:
+  #     - "9083:9083"                  # Thrift порт
+  #   environment:
+  #     SERVICE_NAME: metastore
+  #     # Используем встроенный Derby (просто для начала). Позже можно заменить на Postgres
+  #   networks:
+  #     - airflow-net
+  #   depends_on:
+  #     - minio
+  #   restart: unless-stopped
+
+  nessie:
+    image: projectnessie/nessie:latest
+    container_name: nessie
+    hostname: nessie
+    ports:
+      - "19120:19120"   # REST API порт
+    environment:
+      - NESSIE_VERSION_STORE_TYPE=IN_MEMORY   # для начала, позже можно PostgreSQL
+      - QUARKUS_HTTP_PORT=19120
+    networks:
+      - airflow-net
+    restart: unless-stopped
+    depends_on:
+      - minio
+
   minio:
     image: quay.io/minio/minio:latest
     container_name: minio

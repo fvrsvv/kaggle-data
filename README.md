@@ -27,6 +27,7 @@ MinIO → Bronze (сырые данные)
 PySpark Job (очистка, дедупликация, обогащение)
           ↓
 MinIO → Silver (Apache Iceberg tables)
+(Nessie as REST Catalog)
           ↓
 dbt читает данные напрямую из Silver Iceberg. 
 Trino выступает как query engine, который умеет читать Iceberg таблицы по SQL.

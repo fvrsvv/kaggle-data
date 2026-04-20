@@ -20,9 +20,12 @@ df_clean = (df
     .withColumn("source", lit("kaggle"))
 )
 
-df_clean.write \
-    .mode("overwrite") \
-    .parquet("s3a://silver/job_salary_prediction")
+spark.sql("CREATE NAMESPACE IF NOT EXISTS iceberg.silver")
 
-print("✅ Job completed successfully!")
+df_clean.writeTo("iceberg.silver.job_salary_prediction") \
+    .tableProperty("format-version", "2") \
+    .option("write.format.default", "parquet") \
+    .createOrReplace()
+
+print("✅ Successfully written to Iceberg table with Nessie: iceberg.silver.job_salary_prediction")
 spark.stop()
