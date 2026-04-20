@@ -1,13 +1,12 @@
 job_salary:
-  target: dev
+  target: dev_trino
   outputs:
-    dev:
+    dev_trino:
       type: trino
-      method: none
-      http_scheme: http
-      host: trino            
+      host: trino
       port: 8080
       catalog: iceberg
-      schema: gold                 
+      schema: silver
       user: admin
+      http_scheme: http
       threads: 4

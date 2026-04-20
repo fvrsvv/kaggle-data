@@ -51,6 +51,7 @@ RUN python -m venv /home/airflow/dbt_venv
 RUN /home/airflow/dbt_venv/bin/pip install --no-cache-dir \
     dbt-core==1.8.0 \
     dbt-trino==1.8.5 \
+    dbt-clickhouse==1.8.0 \
     && /home/airflow/dbt_venv/bin/pip cache purge
 
 USER root

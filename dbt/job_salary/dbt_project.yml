@@ -31,8 +31,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   job_salary:
-    +materialized: table          
-    silver:
-      +materialized: view         
     gold:
       +materialized: table
+      +schema: default

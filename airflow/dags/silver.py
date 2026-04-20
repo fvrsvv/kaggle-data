@@ -30,15 +30,13 @@ with DAG(
             "spark.executor.cores": "1",
             "spark.driver.memory": "1g",
 
-            # S3 MinIO
             "spark.sql.extensions": "org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions",
             "spark.sql.catalog.iceberg": "org.apache.iceberg.spark.SparkCatalog",
             "spark.sql.catalog.iceberg.catalog-impl": "org.apache.iceberg.nessie.NessieCatalog",
             "spark.sql.catalog.iceberg.uri": "http://nessie:19120/api/v2",
             "spark.sql.catalog.iceberg.warehouse": "s3a://silver/",
-            "spark.sql.catalog.iceberg.ref": "main",                    # основная ветка
+            "spark.sql.catalog.iceberg.ref": "main",                    
 
-            # S3 MinIO
             "spark.hadoop.fs.s3a.endpoint": "http://minio:9000",
             "spark.hadoop.fs.s3a.access.key": "minio",
             "spark.hadoop.fs.s3a.secret.key": "minio123",

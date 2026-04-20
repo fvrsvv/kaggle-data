@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: silver
+    database: iceberg         
+    schema: silver
+    tables:
+      - name: job_salary_prediction
+        description: "Очищенные данные из PySpark в Iceberg (Nessie)"
