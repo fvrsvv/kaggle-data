@@ -108,30 +108,3 @@ def salary_summary():
     finally:
         spark.stop()
 
-dag = DAG(
-    dag_id="silver_to_gold_vitrines",
-    schedule_interval=None,
-    schedule=None,
-    catchup=False,
-    tags=["gold", "vitrines", "analytics"],
-)
-
-mart_1_task = PythonOperator(
-    task_id="salary_by_industry",
-    python_callable=salary_by_industry,
-    dag=dag,
-)
-
-mart_2_task = PythonOperator(
-    task_id="salary_by_experience",
-    python_callable=salary_by_experience,
-    dag=dag,
-)
-
-mart_3_task = PythonOperator(
-    task_id="salary_summary",
-    python_callable=salary_summary,
-    dag=dag,
-)
-
-(mart_1_task >> mart_2_task >> mart_3_task)

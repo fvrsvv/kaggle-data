@@ -1,7 +1,7 @@
 # version: '3.5'
 x-airflow-common:
   &airflow-common
-  image: my-airflow-with-spark:2.11.2
+  image: my-airflow-with-spark
   build: .
   env_file:
       - ./.env
@@ -17,8 +17,9 @@ x-airflow-common:
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
     AIRFLOW__CORE__TEST_CONNECTION: 'Enabled'
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
-    # Автоматическое создание Spark connection
+    # Автоматическое создание connection with airflow
     AIRFLOW_CONN_SPARK_DEFAULT: '{"conn_type": "spark", "host": "spark-master", "port": 7077, "extra": {"deploy-mode": "client"}}' 
+    AIRFLOW_CONN_TRINO: '{"conn_type": "trino", "host": "trino", "port": 8080, "login": "admin", "schema": "silver", "extra": {"catalog": "iceberg"}}'
     JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
     SPARK_HOME: /opt/spark
     # AIRFLOW_CONN_SERVER_PUBLICIST: 'postgresql://${POSTGRES_PUBLICIST_USER}:${POSTGRES_PUBLICIST_PASSWORD}@host.docker.internal:5431/${POSTGRES_PUBLICIST_DB}'
@@ -82,7 +83,7 @@ services:
     hostname: spark-master
     ports:
       - "7077:7077"
-      - "8180:8080"      # твой Master UI на 8180
+      - "8180:8080"      
     command: >
       bash -c "/opt/spark/sbin/start-master.sh && tail -f /opt/spark/logs/spark*.out"
     networks:
@@ -221,48 +222,50 @@ services:
       - -c
       - airflow
 
-  # flower:
-  #   <<: *airflow-common
-  #   command: celery flower
-  #   profiles:
-  #     - flower
-  #   ports:
-  #     - "5555:5555"
-  #   healthcheck:
-  #     test: ["CMD", "curl", "--fail", "http://localhost:5555/"]
-  #     interval: 30s
-  #     timeout: 10s
-  #     retries: 5
-  #     start_period: 30s
-  #   restart: always
-  #   depends_on:
-  #     <<: *airflow-common-depends-on
-  #     airflow-init:
-  #       condition: service_completed_successfully
+  clickhouse:
+    image: clickhouse/clickhouse-server:24.8
+    container_name: clickhouse
+    ports: 
+      - 8123:8123
+    restart: unless-stopped
+    environment:
+      CLICKHOUSE_USER: ${CLICKHOUSE_USER}
+      CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD}
+      # CLICKHOUSE_DB: ${CLICKHOUSE_DB}
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: 1
+      # POSTGRES_SUBSCRIPTION_PASSWORD: ${POSTGRES_SUBSCRIPTION_PASSWORD}
+    volumes:
+      - ./clickhouse/init:/docker-entrypoint-initdb.d
+    networks:
+      - airflow-net
+    # depends_on:
+    #   # server_subscription:
+      #   condition: service_healthy
 
-# ClickHouse
-  # server_clickhouse:
-  #   image: clickhouse/clickhouse-server:latest
-  #   container_name: clickhouse
-  #   ports: 
-  #     - 8123:8123
-  #   restart: unless-stopped
-  #   environment:
-  #     CLICKHOUSE_USER: ${CLICKHOUSE_USER}
-  #     CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD}
-  #     CLICKHOUSE_DB: ${CLICKHOUSE_DB}
-  #     CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: 1
-  #     # POSTGRES_SUBSCRIPTION_PASSWORD: ${POSTGRES_SUBSCRIPTION_PASSWORD}
-  #   volumes:
-  #     # - './clickhouse/ch_data:/var/lib/clickhouse/'
-  #     # - './clickhouse/ch_data:/var/log/clickhouse-server/'
-  #     - './clickhouse/ch_command:/docker-entrypoint-initdb.d/'
-  #   # networks:
-  #   #   click_net:
-  #   #     ipv4_address: 192.168.2.2
-  #   # depends_on:
-  #   #   # server_subscription:
-  #     #   condition: service_healthy
+  trino:
+    image: trinodb/trino:latest
+    container_name: trino
+    ports:
+      - "8181:8080"          
+    volumes:
+      - ./trino/catalog:/etc/trino/catalog
+    networks:
+      - airflow-net
+
+  nessie:
+    image: projectnessie/nessie:latest
+    container_name: nessie
+    hostname: nessie
+    ports:
+      - "19120:19120"   
+    environment:
+      - NESSIE_VERSION_STORE_TYPE=IN_MEMORY   
+      - QUARKUS_HTTP_PORT=19120
+    networks:
+      - airflow-net
+    restart: unless-stopped
+    depends_on:
+      - minio
 
   minio:
     image: quay.io/minio/minio:latest
@@ -291,7 +294,6 @@ services:
       /usr/bin/mc alias set dockerminio http://minio:9000  "${MINIO_ROOT_USER}" "${MINIO_ROOT_PASSWORD}";
       /usr/bin/mc mb dockerminio/"${MINIO_BUCKET_RAW}";
       /usr/bin/mc mb dockerminio/"${MINIO_BUCKET_SILVER}";
-      /usr/bin/mc mb dockerminio/"${MINIO_BUCKET_GOLD}";
       exit 0;
       "
     networks:

@@ -1,14 +1,21 @@
 job_salary:
-  target: dev
+  target: dev_trino
   outputs:
-    dev:
-      type: clickhouse
-      host: clickhouse          # ← измени, если у тебя другой хост (localhost, host.docker.internal и т.д.)
-      port: 8123                # HTTP порт (обычно 8123)
-      user: user
-      password: user              # если есть пароль — укажи здесь
-      database: default         # или analytics / job_salary — как тебе удобно
-      schema: default           # в ClickHouse schema = database
-      secure: false
-      driver: http              # или native (зависит от версии)
+    dev_trino:
+      type: trino
+      host: trino
+      port: 8080
+      catalog: iceberg
+      schema: silver
+      user: admin
+      http_scheme: http
       threads: 4
+      
+    dev_clickhouse:
+      type: clickhouse
+      host: clickhouse
+      port: 8123
+      catalog: default
+      schema: gold
+      user: user
+      password: user

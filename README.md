@@ -22,22 +22,20 @@
           ↓
 Airflow DAG (Ingestion)
           ↓
-MinIO → Bronze (сырые данные)
+MinIO → Bronze (raw files)
           ↓
 PySpark Job (очистка, дедупликация, обогащение)
           ↓
-MinIO → Silver (Apache Iceberg tables)
+MinIO Silver Apache Iceberg tables (Nessie catalog)
           ↓
 dbt читает данные напрямую из Silver Iceberg. 
 Trino выступает как query engine, который умеет читать Iceberg таблицы по SQL.
           ↓
-dbt материализует модели в ClickHouse (Gold layer).
+Trino (query engine) + Nessie as Catalog
           ↓
-dbt (на ClickHouse) + Cosmos
-   ├── Silver models → materialization: view / ephemeral
-   └── Gold / Data Marts → materialization: table / incremental (MergeTree)
+dbt → materializes Gold layer **в ClickHouse** (MergeTree / ReplicatedMergeTree)
           ↓
-BI-инструменты (Metabase / Superset)
+Analytics / BI / Data Marts используют ClickHouse Gold
 ```
 
 ---
