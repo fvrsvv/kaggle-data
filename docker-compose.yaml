@@ -1,7 +1,7 @@
 # version: '3.5'
 x-airflow-common:
   &airflow-common
-  image: my-airflow-with-spark:2.11.2
+  image: my-airflow-with-spark
   build: .
   env_file:
       - ./.env
@@ -83,7 +83,7 @@ services:
     hostname: spark-master
     ports:
       - "7077:7077"
-      - "8180:8080"      # твой Master UI на 8180
+      - "8180:8080"      
     command: >
       bash -c "/opt/spark/sbin/start-master.sh && tail -f /opt/spark/logs/spark*.out"
     networks:
@@ -222,9 +222,8 @@ services:
       - -c
       - airflow
 
-  # ClickHouse
   clickhouse:
-    image: clickhouse/clickhouse-server:latest
+    image: clickhouse/clickhouse-server:24.8
     container_name: clickhouse
     ports: 
       - 8123:8123
@@ -232,7 +231,7 @@ services:
     environment:
       CLICKHOUSE_USER: ${CLICKHOUSE_USER}
       CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD}
-      CLICKHOUSE_DB: ${CLICKHOUSE_DB}
+      # CLICKHOUSE_DB: ${CLICKHOUSE_DB}
       CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: 1
       # POSTGRES_SUBSCRIPTION_PASSWORD: ${POSTGRES_SUBSCRIPTION_PASSWORD}
     volumes:
@@ -252,54 +251,15 @@ services:
       - ./trino/catalog:/etc/trino/catalog
     networks:
       - airflow-net
-  
-  # polaris:
-  #   image: apache/polaris:latest
-  #   container_name: polaris
-  #   platform: linux/amd64   # важно для некоторых хостов
-  #   ports:
-  #     - "8282:8181"   # REST API
-  #   networks:
-  #     - airflow-net
-  #   environment:
-  #     - AWS_ACCESS_KEY_ID=minio
-  #     - AWS_SECRET_ACCESS_KEY=minio123
-  #     - AWS_REGION=us-east-1
-  #     - AWS_ENDPOINT_URL_S3=http://minio:9000
-  #     - POLARIS_BOOTSTRAP_CREDENTIALS=default-realm,root,s3cr3t
-  #   command: >
-  #     sh -c "
-  #       echo 'Bootstrapping Polaris...' &&
-  #       /opt/polaris/bin/polaris --bootstrap --credential default-realm,root,s3cr3t &&
-  #       /opt/polaris/bin/polaris
-  #     "
-  #   depends_on:
-  #     - minio
-  #   # restart: unless-stopped
-
-  # hive-metastore:
-  #   image: apache/hive:4.0.0
-  #   container_name: hive-metastore
-  #   hostname: hive-metastore
-  #   ports:
-  #     - "9083:9083"                  # Thrift порт
-  #   environment:
-  #     SERVICE_NAME: metastore
-  #     # Используем встроенный Derby (просто для начала). Позже можно заменить на Postgres
-  #   networks:
-  #     - airflow-net
-  #   depends_on:
-  #     - minio
-  #   restart: unless-stopped
 
   nessie:
     image: projectnessie/nessie:latest
     container_name: nessie
     hostname: nessie
     ports:
-      - "19120:19120"   # REST API порт
+      - "19120:19120"   
     environment:
-      - NESSIE_VERSION_STORE_TYPE=IN_MEMORY   # для начала, позже можно PostgreSQL
+      - NESSIE_VERSION_STORE_TYPE=IN_MEMORY   
       - QUARKUS_HTTP_PORT=19120
     networks:
       - airflow-net
@@ -334,7 +294,6 @@ services:
       /usr/bin/mc alias set dockerminio http://minio:9000  "${MINIO_ROOT_USER}" "${MINIO_ROOT_PASSWORD}";
       /usr/bin/mc mb dockerminio/"${MINIO_BUCKET_RAW}";
       /usr/bin/mc mb dockerminio/"${MINIO_BUCKET_SILVER}";
-      /usr/bin/mc mb dockerminio/"${MINIO_BUCKET_GOLD}";
       exit 0;
       "
     networks:

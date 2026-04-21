@@ -9,14 +9,14 @@ with DAG(
         "retries": 1,
     },
     schedule=None,
-    start_date=datetime(2025, 1, 1),
     catchup=False,
+    is_paused_upon_creation=False,
     tags=["spark", "minio"],
 ) as dag:
 
     bronze_to_silver = SparkSubmitOperator(
         task_id="bronze_to_silver_etl",
-        application="/opt/spark_jobs/etl_raw_to_silver.py",
+        application="/opt/spark_jobs/silver_job.py",
         conn_id="spark_default",
         deploy_mode="client",
         verbose=True,

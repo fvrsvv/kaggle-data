@@ -4,6 +4,7 @@ import io
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 from minio import Minio
 from minio.error import S3Error
 from kagglehub import KaggleDatasetAdapter
@@ -49,4 +50,11 @@ kaggle_to_minio_task = PythonOperator(
     dag=dag,
 )
 
-(kaggle_to_minio_task)
+trigger_dag_silver = TriggerDagRunOperator(
+    task_id = 'trigger_dag_silver',
+    trigger_dag_id='raw_to_silver_spark',
+    wait_for_completion=False,
+    reset_dag_run=True,
+)
+
+(kaggle_to_minio_task >> trigger_dag_silver)

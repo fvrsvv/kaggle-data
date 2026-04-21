@@ -10,3 +10,12 @@ job_salary:
       user: admin
       http_scheme: http
       threads: 4
+      
+    dev_clickhouse:
+      type: clickhouse
+      host: clickhouse
+      port: 8123
+      catalog: default
+      schema: gold
+      user: user
+      password: user

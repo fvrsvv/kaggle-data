@@ -27,12 +27,35 @@ with DAG(
         """,
     )
 
+    # insert_to_clickhouse = SQLExecuteQueryOperator(
+    #     task_id="insert_into_clickhouse",
+    #     conn_id="trino",         
+    #     sql="""
+    #         INSERT INTO clickhouse.gold.fct_salary_overview
+    #         SELECT * FROM iceberg.silver_gold.fct_salary_overview
+            
+    #     """,
+    #     autocommit=True,
+    # )
+        
     insert_to_clickhouse = SQLExecuteQueryOperator(
         task_id="insert_into_clickhouse",
         conn_id="trino",         
         sql="""
-            INSERT INTO clickhouse.default.fct_salary_overview
-            SELECT * FROM iceberg.silver.fct_salary_overview
+            INSERT INTO clickhouse.gold.fct_salary_overview
+            SELECT 
+                -- String → VARBINARY для LowCardinality(String)
+                CAST(industry AS VARBINARY) as industry,
+                CAST(education_level AS VARBINARY) as education_level,
+                avg_salary,
+                job_count,
+                min_salary,
+                max_salary,
+                unique_job_titles,
+                last_updated,
+                -- TIMESTAMP(6) → TIMESTAMP(0)
+                CAST(dbt_loaded_at AS TIMESTAMP(0)) as dbt_loaded_at
+            FROM iceberg.silver_gold.fct_salary_overview
         """,
         autocommit=True,
     )

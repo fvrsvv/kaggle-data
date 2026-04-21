@@ -31,7 +31,7 @@ MinIO Silver Apache Iceberg tables (Nessie catalog)
 dbt читает данные напрямую из Silver Iceberg. 
 Trino выступает как query engine, который умеет читать Iceberg таблицы по SQL.
           ↓
-Trino (query engine) + dbt 
+Trino (query engine) + Nessie as Catalog
           ↓
 dbt → materializes Gold layer **в ClickHouse** (MergeTree / ReplicatedMergeTree)
           ↓
