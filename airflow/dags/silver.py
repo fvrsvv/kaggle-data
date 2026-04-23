@@ -1,6 +1,7 @@
 from datetime import datetime
 from airflow import DAG
 from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOperator
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 with DAG(
     dag_id="raw_to_silver_spark",
@@ -43,3 +44,12 @@ with DAG(
             "spark.hadoop.fs.s3a.path.style.access": "true",
         },
     )
+
+    trigger_dag_gold = TriggerDagRunOperator(
+        task_id = 'trigger_dag_gold',
+        trigger_dag_id='silver_to_gold_dbt',
+        wait_for_completion=False,
+        reset_dag_run=True,
+    )
+
+    (bronze_to_silver >> trigger_dag_gold)

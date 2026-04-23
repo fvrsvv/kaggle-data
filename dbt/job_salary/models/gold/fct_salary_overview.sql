@@ -1,6 +1,9 @@
 {{ config(
     materialized='table',
-    schema='gold'         
+    catalog='clickhouse',         
+    schema='gold',
+    engine='MergeTree()',          
+    order_by='(industry, education_level)'
 ) }}
 
 SELECT 
@@ -11,8 +14,7 @@ SELECT
     MIN(salary)                                      AS min_salary,
     MAX(salary)                                      AS max_salary,
     COUNT(DISTINCT job_title)                        AS unique_job_titles,
-    MAX(ingestion_date)                              AS last_updated,
-    now()                                            AS dbt_loaded_at
+    MAX(ingestion_date)                              AS last_updated
 FROM {{ source('silver', 'job_salary_prediction') }}
 GROUP BY 
     industry, 
