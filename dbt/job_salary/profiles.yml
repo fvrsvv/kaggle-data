@@ -5,17 +5,8 @@ job_salary:
       type: trino
       host: trino
       port: 8080
-      catalog: iceberg
+      catalog: iceberg    
       schema: silver
       user: admin
       http_scheme: http
       threads: 4
-      
-    dev_clickhouse:
-      type: clickhouse
-      host: clickhouse
-      port: 8123
-      catalog: default
-      schema: gold
-      user: user
-      password: user

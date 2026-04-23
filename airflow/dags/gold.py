@@ -1,6 +1,3 @@
-from datetime import datetime
-from airflow import DAG
-from airflow.operators.python import PythonOperator
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import (
     col, count, avg, median, min, max, stddev, 

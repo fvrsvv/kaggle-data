@@ -33,4 +33,5 @@ models:
   job_salary:
     gold:
       +materialized: table
-      +schema: default
+      +schema: gold
+      +engine: 'MergeTree()'

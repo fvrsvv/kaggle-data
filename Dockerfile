@@ -1,3 +1,5 @@
+# my-airflow-with-spark
+
 FROM apache/airflow:2.11.2-python3.10
 
 USER root
@@ -53,5 +55,3 @@ RUN /home/airflow/dbt_venv/bin/pip install --no-cache-dir \
 USER root
 RUN ln -s /home/airflow/dbt_venv/bin/dbt /usr/local/bin/dbt
 USER airflow
-
-# cp my-airflow-with-spark:2.11.2 my-airflow-with-spark

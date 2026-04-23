@@ -1,6 +1,5 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, lower, trim, current_date, current_timestamp, lit
-import sys
 
 spark = SparkSession.builder \
     .appName("Raw_to_Silver_Job") \
