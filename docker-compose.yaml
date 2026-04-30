@@ -234,13 +234,38 @@ services:
       # CLICKHOUSE_DB: ${CLICKHOUSE_DB}
       CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: 1
       # POSTGRES_SUBSCRIPTION_PASSWORD: ${POSTGRES_SUBSCRIPTION_PASSWORD}
-    volumes:
-      - ./clickhouse/init:/docker-entrypoint-initdb.d
+    # volumes:
+    #   - ./clickhouse/init:/docker-entrypoint-initdb.d
     networks:
       - airflow-net
     # depends_on:
     #   # server_subscription:
       #   condition: service_healthy
+
+  # visualisation
+  metabase:
+    image: metabase/metabase:latest
+    container_name: metabase
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - metabase_data:/metabase-data
+      - ./metabase/plugins:/plugins
+    depends_on:
+      - clickhouse
+    command: >
+      bash -c "
+        /app/metabase-init.sh &
+        /app/run_metabase.sh
+      "
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 8
+    networks:
+      - airflow-net
 
   trino:
     image: trinodb/trino:latest
@@ -305,3 +330,4 @@ networks:
 
 volumes:
     data-minio:
+    metabase_data:
